@@ -72,6 +72,12 @@ footer{
 	justify-content: center;
 	align-items: center;
 }
+footer .slogan{
+	font-size: 22px;
+	font-style: italic;
+	font-family: Chewy;
+	font-weight: bold;
+}
 
 /*________Single TeamMember Page_____*/
 main .teamMember{
