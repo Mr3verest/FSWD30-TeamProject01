@@ -1,7 +1,7 @@
 *{	
 	margin: 0;
 	padding: 0;
-	font-family: Arial;
+	font-family: Georgia, Arial;
 }
 .container{
 	width: 80%;
@@ -39,7 +39,7 @@ nav div{
 /*_____________Header both pages END_________*/
 
 .indexMain{
-	background-color: #38a18c;
+	background-color: white;
 	color: #ffffff;
 }
 main .teamHeading{
