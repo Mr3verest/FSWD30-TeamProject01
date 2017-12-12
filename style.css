@@ -13,17 +13,28 @@
 }
 /*_____________Header both pages_________*/
 header{
-	height: 120px;
+	height: 90px;
 	justify-content: center;
 	align-items: center;
 	background-color: #f4f4f4;
-	font-size: 40px;
-	color: #e78244;
 	padding-bottom: 10px;
+	color: #e78244;
+	font-size: 40px;
 }
 header span{
 	font-weight: bold;
 }
+nav{
+	height: 30px;
+	background-color: #2d4452;
+	color: white;
+	justify-content: flex-end;
+	align-items: center;
+}
+nav div{
+	margin: 0 5px;
+}
+
 /*_____________Header both pages END_________*/
 
 .indexMain{
