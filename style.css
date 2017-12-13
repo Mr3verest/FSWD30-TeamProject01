@@ -63,7 +63,8 @@ main .teamHeading{
 	padding: 10px 0;
 }
 main .text-teamCon{
-
+	justify-content: center;
+	text-shadow: -1px 1px 1px black;
 }
 main .textBox{
 	border: solid 1px green;
@@ -83,7 +84,7 @@ main .member{
 	font-weight: bold;
 	letter-spacing: 2px;
 	width: 35%;
-	max-width: 350px;
+	min-width: 140px;
 }
 .member img{
 	width: 100%;
@@ -129,8 +130,15 @@ main .teamMember{
 .teamMember .textCon p{
 	margin-top: 10px;
 	max-width: 500px;
+	text-shadow: -1px 1px 1px black;
 }
 footer .memberFooter p{
 	margin: 0 15px;
 	font-style: italic;
+}
+
+@media screen and (max-width: 750px){
+	.text-teamCon{
+		flex-direction: column;
+	}
 }
