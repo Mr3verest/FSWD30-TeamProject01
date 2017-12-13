@@ -26,11 +26,11 @@ header{
 	color: #3f3536;
 	font-size: 40px;
 }
-header .imgCon{
+header .logoCon{
 	height: 90px;
 	margin-left: 15%;
 }
-header .imgCon img{
+header .logoCon img{
 	width: 100px;
 }
 header span{
@@ -87,6 +87,8 @@ main .member{
 }
 .member img{
 	width: 100%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 5px silver;
 }
 
 footer{
@@ -117,10 +119,16 @@ main .teamMember{
 }
 .imgCon img{
 	width: 100%;
+	border-radius: 50px;
+	box-shadow: 1px 1px 20px 5px silver;
 }
 .teamMember .textCon{
-	margin-left: 10px;
+	margin-left: 50px;
 	color:	white;
+}
+.teamMember .textCon p{
+	margin-top: 10px;
+	max-width: 500px;
 }
 footer .memberFooter p{
 	margin: 0 15px;
