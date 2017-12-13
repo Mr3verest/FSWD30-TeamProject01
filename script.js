@@ -12,6 +12,6 @@ document.getElementById("member3").addEventListener("click", function(){
 	window.location.href = "member-Mahtab.html";
 });
 document.getElementById("member4").addEventListener("click", function(){
-	window.location.href = "member-Ibrahim.html";
+	window.location.href = "member-Ibrahimi.html";
 });
 
