@@ -11,6 +11,11 @@
 .flexCon{
 	display: flex;
 }
+.background{
+	background-image: url("img/background_cityblur.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /*_____________Header both pages_________*/
 header{
 	height: 90px;
@@ -58,16 +63,18 @@ main .teamHeading{
 	padding: 10px 0;
 }
 main .text-teamCon{
-	/*flex-direction: row;*/
+
 }
 main .textBox{
 	border: solid 1px green;
 	height: 400px;
 	width: 400px;
+	color: white;
 }
 main .team{
 	justify-content: space-around;
 	margin-top: 20px;
+	color: yellow;
 }
 main .member{
 	flex-direction: column;
@@ -113,14 +120,9 @@ main .teamMember{
 }
 .teamMember .textCon{
 	margin-left: 10px;
+	color:	white;
 }
-
 footer .memberFooter p{
 	margin: 0 15px;
 	font-style: italic;
-}
-body{
-	background-image: url("img/background_cityblur.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
