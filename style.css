@@ -32,6 +32,7 @@ header .logoCon{
 }
 header .logoCon img{
 	width: 100px;
+	cursor: pointer;
 }
 header span{
 	font-weight: bold;
@@ -61,16 +62,33 @@ main .teamHeading{
 	font-weight: bold;
 	font-size: 40px;
 	padding: 10px 0;
+	text-shadow: -1px 1px 1px black;
 }
 main .text-teamCon{
 	justify-content: center;
 	text-shadow: -1px 1px 1px black;
+	padding-bottom: 20px;
 }
 main .textBox{
-	border: solid 1px green;
+	position: relative;
+	z-index: 1;
 	height: 400px;
 	width: 400px;
 	color: white;
+	padding: 15px;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+main .textBox::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0.3;
+	border: 10px double grey;
 }
 main .team{
 	justify-content: space-around;
@@ -90,8 +108,14 @@ main .member{
 	width: 100%;
 	border-radius: 50px;
 	box-shadow: 0px 0px 20px 5px silver;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+.member img:hover{
+	transform: scale(1.1);
 }
 
+/*____________Footer Start __________*/
 footer{
 	height: 80px;
 	background-color: #2d4452;
@@ -105,6 +129,8 @@ footer .slogan{
 	font-family: Chewy;
 	font-weight: bold;
 }
+/*____________Footer End __________*/
+
 
 /*________Single TeamMember Page_____*/
 main .teamMember{
@@ -126,11 +152,26 @@ main .teamMember{
 .teamMember .textCon{
 	margin-left: 50px;
 	color:	white;
+	z-index: 1;
+	position: relative;
+	padding: 15px;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.teamMember .textCon::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0.3;
+	border: 10px double grey;
 }
 .teamMember .textCon p{
 	margin-top: 10px;
 	max-width: 500px;
-	text-shadow: -1px 1px 1px black;
 }
 footer .memberFooter p{
 	margin: 0 15px;
