@@ -1,18 +1,18 @@
 document.getElementById("home").addEventListener("click", function(){
-	window.location.href = "index.html";
+	window.location.href = "http://www.codefactory.academy/pascal-tonsern/homepage.html";
 });
 
 document.getElementById("member1").addEventListener("click", function(){
-	window.location.href = "member-Pascal.html";
+	window.location.href = "http://www.codefactory.academy/pascal-tonsern/index.html";
 });
 document.getElementById("member2").addEventListener("click", function(){
-	window.location.href = "member-Sade.html";
+	window.location.href = "http://www.codefactory.academy/sade-otaru/index.html";
 });
 document.getElementById("member3").addEventListener("click", function(){
-	window.location.href = "member-Mahtab.html";
+	window.location.href = "http://www.codefactory.academy/mahtab-nahayati/index.html";
 });
 document.getElementById("member4").addEventListener("click", function(){
-	window.location.href = "member-Ibrahimi.html";
+	window.location.href = "http://www.codefactory.academy/faisal-ibrahimi/index.html";
 });
 
 
