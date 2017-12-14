@@ -246,5 +246,9 @@ footer .memberFooter p{
 	.text-teamCon{
 		flex-direction: column;
 	}
+	.textBox{
+		margin-top: 20px;
+		min-width: 100%;
+	}
 }
 /*___________ Responsiveness END __________*/
