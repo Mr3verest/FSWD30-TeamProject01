@@ -2,6 +2,10 @@
 	margin: 0;
 	padding: 0;
 	font-family: Georgia, Arial;
+	z-index: 1;
+}
+.backCon{
+	position: relative;
 }
 .container{
 	width: 80%;
@@ -11,11 +15,46 @@
 .flexCon{
 	display: flex;
 }
-.background{
-	background-image: url("img/background_cityblur.jpg");
+
+/*____________carousel Start __________*/
+#slide1 {
+  background-image: url("img/background_cityblur.jpg");
+}
+#slide2 {
+  background-image: url("http://www.teachingforecojustice.org/images/top3.jpg");
+}
+#slide3 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9CugZyLLIYMhqrTDybrMBvgcpZAegnbVLyuW090KtCfpw3I8");
+}
+.backgrounds{
+	display: none;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1
 }
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*____________carousel End__________*/
+
 /*_____________Header both pages_________*/
 header{
 	height: 90px;
@@ -72,8 +111,7 @@ main .text-teamCon{
 main .textBox{
 	position: relative;
 	z-index: 1;
-	height: 400px;
-	width: 400px;
+	width: 50%;
 	color: white;
 	padding: 15px;
 	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -181,8 +219,10 @@ footer .memberFooter p{
 	font-style: italic;
 }
 
+/*___________ Responsiveness __________*/
 @media screen and (max-width: 750px){
 	.text-teamCon{
 		flex-direction: column;
 	}
 }
+/*___________ Responsiveness END __________*/
