@@ -144,6 +144,7 @@ main .member{
 	letter-spacing: 2px;
 	width: 35%;
 	min-width: 140px;
+	height:20%;
 }
 .member img{
 	width: 100%;
