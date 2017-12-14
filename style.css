@@ -11,11 +11,40 @@
 .flexCon{
 	display: flex;
 }
-.background{
-	background-image: url("img/background_cityblur.jpg");
+
+/*____________carousel Start __________*/
+#slide1 {
+  background-image: url("img/background_cityblur.jpg");
+}
+#slide2 {
+  background-image: url("http://www.teachingforecojustice.org/images/top3.jpg");
+}
+#slide3 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9CugZyLLIYMhqrTDybrMBvgcpZAegnbVLyuW090KtCfpw3I8");
+}
+.backgrounds{
+	display: none;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*____________carousel End__________*/
+
 /*_____________Header both pages_________*/
 header{
 	height: 90px;
@@ -72,8 +101,7 @@ main .text-teamCon{
 main .textBox{
 	position: relative;
 	z-index: 1;
-	height: 400px;
-	width: 400px;
+	width: 50%;
 	color: white;
 	padding: 15px;
 	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
