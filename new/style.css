@@ -1,0 +1,255 @@
+*{	
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, Arial;
+	z-index: 1;
+}
+.backCon{
+	position: relative;
+}
+.container{
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.flexCon{
+	display: flex;
+}
+
+/*____________carousel Start __________*/
+#slide1 {
+  background-image: url("img/background_cityblur.jpg");
+}
+#slide2 {
+  background-image: url("img/background_1.jpg");
+}
+#slide3 {
+  background-image: url("img/background_2.jpg");
+}
+#slide4 {
+  background-image: url("img/background_3.jpg");
+}
+.backgrounds{
+	display: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+/*____________carousel End__________*/
+
+/*_____________Header both pages_________*/
+header{
+	height: 90px;
+	justify-content: flex-start;
+	align-items: flex-end;
+	background-color: #9cbbb0;
+	padding-bottom: 10px;
+	color: #3f3536;
+	font-size: 40px;
+}
+header .logoCon{
+	height: 90px;
+	margin-left: 15%;
+}
+header .logoCon img{
+	width: 100px;
+}
+header span{
+	font-weight: bold;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.topnav a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/*nav{
+	height: 30px;
+	background-color: #2d4452;
+	color: white;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 15%;
+}
+nav div{
+	margin: 0 5px;
+} */
+
+/*_____________Header both pages END_________*/
+
+.indexMain{
+	background-color: transparent;
+	color: black;
+
+}
+main .teamHeading{
+	color: #2d4452;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	padding: 10px 0;
+	text-shadow: -1px 1px 1px yellow;
+}
+main .text-teamCon{
+	justify-content: center;
+	text-shadow: -1px 1px 1px black;
+	padding-bottom: 20px;
+}
+main .textBox{
+	position: relative;
+	z-index: 1;
+	width: 50%;
+	color: white;
+	padding: 15px;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 28px;
+	text-align: center;
+
+}
+main .textBox::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0.3;
+	border: 10px double grey;
+}
+main .team{
+	justify-content: space-around;
+	margin-top: 20px;
+	color: yellow;
+}
+main .member{
+	flex-direction: column;
+	align-items: center;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	width: 35%;
+	min-width: 140px;
+	height:20%;
+}
+.member img{
+	width: 100%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 5px silver;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+.member img:hover{
+	transform: scale(1.1);
+}
+
+/*____________Footer Start __________*/
+footer{
+	height: 80px;
+	background-color: #2d4452;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+footer .slogan{
+	font-size: 34px;
+	font-style: italic;
+	font-family: Chewy;
+	font-weight: bold;
+}
+/*____________Footer End __________*/
+
+
+/*________Single TeamMember Page_____*/
+main .teamMember{
+	padding: 20px;
+	font-size: 24px;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.teamMember .imgCon{
+	flex-direction: column;
+	width: 30%;
+}
+.imgCon img{
+	width: 100%;
+	border-radius: 50px;
+	box-shadow: 1px 1px 20px 5px silver;
+}
+.teamMember .textCon{
+	margin-left: 50px;
+	color:	white;
+	z-index: 1;
+	position: relative;
+	padding: 15px;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.teamMember .textCon::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0.3;
+	border: 10px double grey;
+}
+.teamMember .textCon p{
+	margin-top: 10px;
+	max-width: 500px;
+}
+footer .memberFooter p{
+	margin: 0 15px;
+	font-style: italic;
+}
+
+/*___________ Responsiveness __________*/
+@media screen and (max-width: 750px){
+	.text-teamCon{
+		flex-direction: column;
+	}
+	.textBox{
+		margin-top: 20px;
+		min-width: 100%;
+	}
+}
+/*___________ Responsiveness END __________*/
